@@ -9,7 +9,7 @@ https://nodejs.org/en/
 nodejs中的module.exports  与exports.xx 深入理解：http://www.cnblogs.com/pigtail/archive/2013/01/14/2859555.html
 
 nodejs的版本不同，代码的语法可能不一样 如：nodejs 4.3.0  与v0.12.0
-
+一般情况下高版本的会兼容低版本的语法
 //4.3.0 
 
 const http = require('http');
