@@ -13,6 +13,7 @@ nodejs的版本不同，代码的语法可能不一样
 如：nodejs 4.3.0  与v0.12.0
 
 //4.3.0 
+
 const http = require('http');
 http.createServer( (request, response) => {
   response.writeHead(200, {'Content-Type': 'text/plain'});
@@ -21,6 +22,7 @@ http.createServer( (request, response) => {
 console.log('Server running at http://127.0.0.1:8124/');
 
 //v0.12.0
+
 var http=require('http');
 http.createServer(function(req,res){
 	res.writeHead(200,{'Content-Type':'text/plain'});
