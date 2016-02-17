@@ -36,3 +36,57 @@ function plus(callback){
 	},1000)
 }
 plus(printIt)
+
+/************************************************************************************************************/
+添加点击事件：
+/************************************************************************************************************/
+function clickIt(){
+	window.alert('button is clicked')
+}
+var button=document.getElementById('#button')
+button.addEventListener('click',clickIt)
+
+/************************************************************************************************************/
+上下文1
+/************************************************************************************************************/
+function Pet(words){
+	this.words=words
+	this.speak=function(){
+		console.log(this.words)
+		console.log(this===cat)
+		console.log(this)
+	}
+}
+var cat=new Pet('miao')
+cat.speak()
+
+/************************************************************************************************************/
+上下文2  nodejs中的call与apply
+/************************************************************************************************************/
+var pet={
+	words:'...',
+	speak:function(say){
+		console.log(say+''+this.words)
+	}
+}
+var dog={
+	words:'Wang'
+}
+pet.speak('pet.speak')
+pet.speak.call(dog,'speak')
+
+/************************************************************************************************************/
+上下文3  nodejs中的call与apply  
+/************************************************************************************************************/
+function Pet(words){
+	this.words=words
+	this.speak=function(){
+		console.log(this.words)
+	}
+}
+function Dog(words){
+	Pet.call(this,words)
+	//Pet.apply(this,arguments)
+}
+var dog=new Dog('wang')
+dog.speak()
