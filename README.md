@@ -25,3 +25,5 @@ http.createServer(function(req,res){
 	res.end('Hello world\n');   
 }).listen(1337,'127.0.0.1');    
 console.log('Server running at http://127.0.0.1:1377/');     
+
+回调函数：http://blog.sina.com.cn/s/blog_9474609d01017cwb.html
