@@ -27,3 +27,5 @@ http.createServer(function(req,res){
 console.log('Server running at http://127.0.0.1:1377/');     
 
 回调函数：http://blog.sina.com.cn/s/blog_9474609d01017cwb.html
+
+查看浏览器的dns信息：chrome://net-internals/dns
