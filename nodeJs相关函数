@@ -39,11 +39,13 @@ plus(printIt)
 
 /************************************************************************************************************/
 添加点击事件：
+Javascript 的addEventListener()及attachEvent()区别分析
+http://www.jb51.net/article/18220.htm
 /************************************************************************************************************/
 function clickIt(){
 	window.alert('button is clicked')
 }
-var button=document.getElementById('#button')
+var button=document.getElementById('button')
 button.addEventListener('click',clickIt)
 
 /************************************************************************************************************/
