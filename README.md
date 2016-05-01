@@ -1,5 +1,7 @@
 # nodejs
 
+查看nodejs安装了多少全局插件：npm ls -g -depth=1
+
 http://stackoverflow.com/
 
 https://www.npmjs.com/
